@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
+    // publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
     devServer: {
         disableHostCheck: true
     },
@@ -14,8 +14,7 @@ module.exports = {
         workboxPluginMode: 'InjectManifest',
         workboxOptions: {
             // swSrc is required in InjectManifest mode.
-            swSrc: 'src/service-worker.js',
-            // ...other Workbox options...
+            swSrc: 'src/service-worker.js'
         }
     }
 }
